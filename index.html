@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jscript.js"></script>
+</head>
+<body>
+    <div class="image_background">
+    <a href="">
+        <img src="/home/wmon6342/Downloads/halie-west-25xggax4bSA-unsplash.jpg" alt="background postcard" width="600px" height="900px">
+    </a>
+    </div>
+    <div class="logo">
+        <a href="">
+            <img src="/home/wmon6342/Downloads/odin-lined.png" width="100px" height="120px" alt="logo">
+        </a>
+    </div>
+    <div class="transparent_box">
+        <h1>
+            SJ10
+        </h1>
+    </div>
+    <div class="logo_credit">
+        <p>
+            Logo credit: halie-west-25xggax4bSA-unsplash
+        </p>
+    </div>
+<form class="submitForm" id="submitForm" onsubmit="return verifyPassword()">
+    <div class="motivating_sentences">
+        <p>
+            <strong> This is an international volunteering application form - go fill it in!</strong>
+        </p>
+        <p>
+            > This is an exceptional opportunity funded by the EU to try out things which you would have never tried before! This form believes in you :)
+        </p>
+        <p>
+            <em>Required fields have an asterisk next to them(*) <br \> <br \> Passwords are a minimum 8 characters long including at least 1 uppercase and 1 digit character</em>
+        </p>
+    </div>
+    <div class="input_labels">
+        <div class="col1">
+            <label for="firstname">FIRST NAME</label>
+            <input type="text" id="firstname" name="firstname" required placeholder="Enter your first name">
+            <label for="lastname">LAST NAME</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="email">EMAIL*</label>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+        <div class="col2">
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required pattern="(\d){8,}">
+            <label for="password">PASSWORD*</label>
+            <input type="password" id="pwd" name="pwd" required pattern="(?:.*)(?=.*[A-Z])(?=.*\d)(.*)">
+            <label for="confirmpwd">CONFIRM PASSWORD*</label>
+            <input type="password" id="confirmpwd" name="confirmpwd" required pattern="(?:.*)(?=.*[A-Z])(?=.*\d)(.*)">
+        </div>
+        </div>
+    <div class="create_acc">
+        <button>Create Account</button>
+        <p>
+            Already have an account? Log straight in below :)
+        </p>
+        <button>Log in</button>
+    </div>
+</form>
+</body>
+</html>
