@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Norse;
+    src: url(/home/wmon6342/Downloads/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    width: 1440px;
+    height: 900px;
+    border-radius: 1px;
+    border-style: groove;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.all_btns {
+    flex: auto;
+}
+
+form {
+    border-radius: 1px;
+}
+
+.motivating_sentences {
+    margin: 50px;
+    margin-left: 150px;
+}
+
+.input_labels {
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input_labels > * {
+    font-size: small;
+}
+
+#pwd:invalid, #confirmpwd:invalid {
+    border-color: red;
+}
+
+.col1 {
+    flex-direction: column;
+    flex:0;
+}
+
+.col2 {
+    flex-direction: column;
+    flex: 0;
+}
+
+.create_acc {
+    margin: 50px;
+    margin-left: 150px;
+}
+
+label, input {
+    margin: 15px;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 220px;
+    z-index: 2;
+}
+
+.transparent_box {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 15px(rgba(0,0,0,0.1));
+    z-index: 1;
+    font-family: Norse;
+    font-size: xx-large;
+}
+
+.transparent_box > h1 {
+    color: aliceblue;
+    text-size-adjust: 20px;
+    margin-left: 350px;
+}
+
+.logo_credit {
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    margin-top: 850px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo_credit > p {
+    color: aliceblue;
+}
+
+.create_acc > p {
+    font-style: italic;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border-color: aliceblue;
+    background-color: dodgerblue;
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+button:hover {
+    size: 2px;
+    background-color: lightcyan;
+    color: black;
+    transition: all 0.2s;
+}
+
+
+
+
+
